@@ -9,6 +9,8 @@
 	const { data }: { data: PageData } = $props();
 	const name: string = data.name ? data.name : 'anon';
 
+	const crnt_date = new Date();
+
 	function is_partytime(): boolean {
 		const crnt = new Date();
 		const crnt_date = crnt.getDate();
@@ -26,16 +28,21 @@
 
 		return false;
 	}
+
 	let party_time: boolean = $state(is_partytime());
 
 	onMount(() => {
-		const crnt_month = new Date().getMonth();
+		const crnt_month = crnt_date.getMonth();
 
 		if (crnt_month == 11 || crnt_month == 0) {
 			window.setInterval(() => (party_time = is_partytime()), 1000);
 		}
 	});
 </script>
+
+<svelte:head>
+	<meta property="og:description" content="new year wish for {name}" />
+</svelte:head>
 
 <div>
 	{#if party_time}
@@ -48,7 +55,9 @@
 			frameborder="0"
 		></iframe>
 	{:else}
-		<span>Hello there,</span>
+		<span>
+			{crnt_date.getFullYear()} &hyphen;&hyphen;&GT; {crnt_date.getFullYear() + 1}
+		</span>
 		<Timer />
 		<Waiting />
 		<iframe
