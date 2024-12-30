@@ -12,14 +12,14 @@
 <style>
 	div {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		width: 80%;
 
 		span {
 			color: white;
-			font-size: 8em;
+			font-size: 20vmin;
 			animation: Rave 400ms steps(1, end) 26s infinite;
 		}
 

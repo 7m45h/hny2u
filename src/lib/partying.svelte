@@ -29,11 +29,12 @@
 
 <style>
 	img {
-		--margin: 8px;
+		--margin: 5vmin;
 
 		position: absolute;
-		border: 5px solid black;
-		height: 30%;
+		box-sizing: border-box;
+		border: 1vmin solid black;
+		height: 25vmin;
 		animation-name: Move, Rave;
 		animation-duration: 2s, 400ms;
 		animation-timing-function: steps(1, end);

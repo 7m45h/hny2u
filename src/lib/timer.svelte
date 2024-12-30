@@ -43,8 +43,8 @@
 		grid-template-columns: 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
 		grid-template-rows: 100%;
 		width: 80%;
-		font-size: 10em;
-		filter: drop-shadow(5px 5px 5px black);
+		font-size: 25vmin;
+		filter: drop-shadow(1vmin 1vmin 1vmin black);
 
 		span {
 			justify-self: center;

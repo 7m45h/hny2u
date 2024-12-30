@@ -24,11 +24,11 @@
 		background-repeat: repeat;
 
 		span {
-			font-size: 8em;
+			font-size: 20vmin;
 		}
 
 		iframe {
-			filter: drop-shadow(10px 10px 5px black);
+			filter: drop-shadow(1vmin 1vmin 1vmin black);
 		}
 	}
 </style>

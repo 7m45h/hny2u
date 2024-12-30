@@ -36,19 +36,19 @@
 
 	@keyframes -global-Rave {
 		0% {
-			filter: drop-shadow(-10px 0px 5px red);
+			filter: drop-shadow(-2vmin 0px 2vmin red);
 		}
 
 		25% {
-			filter: drop-shadow(0px 10px 5px #0bff01);
+			filter: drop-shadow(0px 2vmin 2vmin #0bff01);
 		}
 
 		50% {
-			filter: drop-shadow(10px 0px 5px blue);
+			filter: drop-shadow(2vmin 0px 2vmin blue);
 		}
 
 		75% {
-			filter: drop-shadow(0px -10px 5px #ab20fd);
+			filter: drop-shadow(0px -2vmin 2vmin #ab20fd);
 		}
 	}
 

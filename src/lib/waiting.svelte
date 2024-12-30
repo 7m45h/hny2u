@@ -6,29 +6,33 @@
 <style>
 	img {
 		position: absolute;
-		filter: drop-shadow(10px 10px 5px black);
+		filter: drop-shadow(2vmin 2vmin 1vmin black);
 	}
 
 	#been {
 		bottom: 0px;
-		left: -128px;
+		left: -25vmin;
+		height: 60vmin;
 	}
 
 	#bob {
-		top: 32px;
-		left: 32px;
+		top: 5vmin;
+		left: 5vmin;
 		transform: rotateZ(25deg);
+		height: 25vmin;
 	}
 
 	#frog {
-		bottom: -25px;
+		bottom: -8vmin;
 		right: 0px;
 		transform: rotateZ(25deg);
+		height: 55vmin;
 	}
 
 	#pepe {
-		top: -16px;
-		right: -16px;
+		top: 0px;
+		right: 0px;
 		transform: rotateZ(-25deg);
+		height: 35vmin;
 	}
 </style>
