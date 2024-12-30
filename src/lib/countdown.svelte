@@ -5,7 +5,7 @@
 	const crnt_date = new Date();
 </script>
 
-<section>
+<section style="background-image: url('./images/background.avif')">
 	<span>
 		{crnt_date.getFullYear()} &hyphen;&hyphen;&GT; {crnt_date.getFullYear() + 1}
 	</span>
@@ -21,7 +21,6 @@
 
 <style>
 	section {
-		background-image: url('./images/background.avif');
 		background-repeat: repeat;
 
 		span {
