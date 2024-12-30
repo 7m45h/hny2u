@@ -40,12 +40,11 @@
 	<meta property="og:description" content="new year wish for {name}" />
 </svelte:head>
 
-<!-- {#if party_time} -->
-<Party {name} />
-
-<!-- {:else}
+{#if party_time}
+	<Party {name} />
+{:else}
 	<Countdown />
-{/if} -->
+{/if}
 
 <style>
 	:global(section) {
