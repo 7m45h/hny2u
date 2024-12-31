@@ -24,7 +24,7 @@
 	#frog {
 		bottom: 0px;
 		right: 0px;
-		height: 55vmin;
+		height: 45vmin;
 	}
 
 	#pepe {
