@@ -16,23 +16,20 @@
 	}
 
 	#bob {
-		top: 5vmin;
-		left: 5vmin;
-		transform: rotateZ(25deg);
-		height: 25vmin;
+		top: 0px;
+		left: 0px;
+		height: 35vmin;
 	}
 
 	#frog {
-		bottom: -8vmin;
+		bottom: 0px;
 		right: 0px;
-		transform: rotateZ(25deg);
 		height: 55vmin;
 	}
 
 	#pepe {
 		top: 0px;
 		right: 0px;
-		transform: rotateZ(-25deg);
 		height: 35vmin;
 	}
 </style>

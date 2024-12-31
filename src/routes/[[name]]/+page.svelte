@@ -72,7 +72,7 @@
 
 	:global(iframe) {
 		width: 50%;
-		height: 25%;
+		height: 20%;
 	}
 
 	#portrait-warn {
