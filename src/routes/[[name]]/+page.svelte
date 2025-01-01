@@ -15,17 +15,11 @@
 
 	function is_partytime(): boolean {
 		const crnt = new Date();
+		const crnt_month = crnt.getMonth();
 		const crnt_date = crnt.getDate();
-		const crnt_hour = crnt.getHours();
 
-		if (crnt_date == 1) {
-			if (crnt_hour == 0 || crnt_hour > 0) {
-				return true;
-			}
-
-			if (crnt_hour == 12 || crnt_hour > 12) {
-				return false;
-			}
+		if (crnt_month == 0 && crnt_date == 1) {
+			return true;
 		}
 
 		return false;
@@ -35,9 +29,11 @@
 
 	onMount(() => {
 		const portrait_check = window.matchMedia('(orientation: portrait)');
-		const crnt_month = new Date().getMonth();
+		const crnt = new Date();
+		const crnt_month = crnt.getMonth();
+		const crnt_date = crnt.getDate();
 
-		if (crnt_month == 11 || crnt_month == 0) {
+		if ((crnt_month == 11 && crnt_date == 31) || (crnt_month == 0 && crnt_date == 1)) {
 			window.setInterval(() => (party_time = is_partytime()), 1000);
 		}
 
